@@ -10,7 +10,7 @@ import { type GeneratorOptions, generateConfig } from './generate.js';
 program
   .name('generate-dependabot-config-from-package-json')
   .description('A CLI for generating dependabot config from package.json')
-  .version('1.0.2');
+  .version('1.0.3');
 
 program
   .option(
@@ -65,14 +65,14 @@ program
   .argument(
     '[string...]',
     'the path to the package.json file or paths separated by whitespace',
-    './package.json'
+    'package.json'
   );
 
 program.parse();
 
 const options = program.opts() as GeneratorOptions;
 
-const args = program.args;
+const args = program.args.length === 0 ? ['package.json'] : program.args;
 
 const yamlSerializerOptions = {
   singleQuote: true,

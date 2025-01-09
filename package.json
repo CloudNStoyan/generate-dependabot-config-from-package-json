@@ -1,6 +1,6 @@
 {
   "name": "@elbaph/generate-dependabot-config-from-package-json",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "description": "A CLI for generating dependabot config from package.json",
   "author": "Stoyan Kolev",
