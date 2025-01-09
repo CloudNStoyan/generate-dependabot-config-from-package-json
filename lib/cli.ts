@@ -9,8 +9,8 @@ import { type GeneratorOptions, generateConfig } from './generate.js';
 
 program
   .name('generate-dependabot-config-from-package-json')
-  .description('CLI for generating dependabot config from package.json')
-  .version('1.0.0');
+  .description('A CLI for generating dependabot config from package.json')
+  .version('1.0.1');
 
 program
   .option(
@@ -62,7 +62,11 @@ program
         'widen',
       ])
   )
-  .argument('[string...]', 'the path to the package.json file', 'package.json');
+  .argument(
+    '[string...]',
+    'the path to the package.json file or paths separated by whitespace',
+    'package.json'
+  );
 
 program.parse();
 
