@@ -10,7 +10,7 @@ import { type GeneratorOptions, generateConfig } from './generate.js';
 program
   .name('generate-dependabot-config-from-package-json')
   .description('A CLI for generating dependabot config from package.json')
-  .version('1.0.1');
+  .version('1.0.2');
 
 program
   .option(
