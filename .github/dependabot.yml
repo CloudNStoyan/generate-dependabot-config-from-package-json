@@ -3,6 +3,7 @@ updates:
   - package-ecosystem: npm
     labels:
       - dependencies
+      - autoupdate
     directory: /
     schedule:
       interval: weekly
