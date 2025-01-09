@@ -1,5 +1,5 @@
 import { vi, test, expect, beforeEach, afterEach, describe } from 'vitest';
-import { generateConfig } from './generate';
+import { generateConfig } from './generate.js';
 import { vol } from 'memfs';
 
 vi.mock('node:fs');
