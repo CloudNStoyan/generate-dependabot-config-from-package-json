@@ -65,7 +65,7 @@ program
   .argument(
     '[string...]',
     'the path to the package.json file or paths separated by whitespace',
-    'package.json'
+    './package.json'
   );
 
 program.parse();
