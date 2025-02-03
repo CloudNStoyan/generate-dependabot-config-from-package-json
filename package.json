@@ -34,13 +34,13 @@
     "yaml": "^2.7.0"
   },
   "devDependencies": {
-    "@types/node": "^22.10.5",
+    "@types/node": "^22.13.0",
     "@types/semver": "^7.5.8",
-    "memfs": "^4.15.3",
+    "memfs": "^4.17.0",
     "prettier": "^3.4.2",
     "rimraf": "^6.0.1",
     "typescript": "^5.7.3",
-    "vitest": "^2.1.8"
+    "vitest": "^2.1.9"
   },
   "license": "MIT",
   "keywords": [
