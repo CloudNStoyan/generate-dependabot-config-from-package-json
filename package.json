@@ -28,8 +28,8 @@
     "typecheck": "tsc --p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "commander": "^13.0.0",
-    "semver": "^7.6.3",
+    "commander": "^13.1.0",
+    "semver": "^7.7.1",
     "tinyrainbow": "^1.2.0",
     "yaml": "^2.7.0"
   },
