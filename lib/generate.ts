@@ -151,6 +151,10 @@ export function generateConfig(
     for (const dependencyName in allDependencies) {
       const semverRange = allDependencies[dependencyName];
 
+      if (semverRange.startsWith('file:')) {
+        continue;
+      }
+
       const currentVersionFromRange = semver.coerce(semverRange);
 
       if (currentVersionFromRange === null) {

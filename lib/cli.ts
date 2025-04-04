@@ -42,7 +42,7 @@ program
   )
   .addOption(
     new Option(
-      '--schedule-interval',
+      '--schedule-interval <string>',
       'define whether to look for version updates: daily, weekly, or monthly'
     )
       .default('weekly')
