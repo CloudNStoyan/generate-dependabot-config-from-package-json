@@ -101,10 +101,9 @@ export function generateConfig(
   const baseUpdateTypes = updateTypes as KeyCombos<DependabotUpdateTypes>;
 
   for (const packageJsonPath of packageJsonPaths) {
-    const packageJsonDirname = path.relative(
-      process.cwd(),
-      path.dirname(packageJsonPath)
-    );
+    const packageJsonDirname = path
+      .relative(process.cwd(), path.dirname(packageJsonPath))
+      .replaceAll('\\', '/');
 
     const updateConfig: DependabotUpdateConfig = {
       'package-ecosystem': 'npm',
