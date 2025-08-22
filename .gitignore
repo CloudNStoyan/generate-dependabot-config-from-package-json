@@ -1,2 +1,9 @@
-node_modules
+# NPM packages
+**/node_modules/
+
+# JetBrains IDEs
+**/.idea/modules.xml
+**/.idea/*.iml
+
+# Build
 build
